@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-.nav li a, .main-content {
+.nav li a, .main-content, .but button h3 {
   color: #fff;
   font-family: "Open Sans" sans-serif;
   font-style: normal;
@@ -81,5 +81,39 @@
   font-size: 24px;
   line-height: 24px;
   padding-bottom: 3%;
+}
+
+.but {
+  position: relative;
+  height: 60px;
+}
+
+.but button {
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  background: #F3AF34;
+  border: none;
+}
+
+.but button button:default {
+  border: none;
+}
+
+.but button div {
+  display: inline-block;
+  height: 22px;
+  padding-top: 5px;
+}
+
+.but button h3 {
+  display: inline;
+  font-size: 16px;
+}
+
+.hr {
+  border-left: 1px solid #1A1917;
+  border-image-width: 0px 0px 18px 0px;
+  padding-left: 3px;
 }
 /*# sourceMappingURL=style.css.map */
