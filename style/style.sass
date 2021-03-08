@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
+
+%form-text
+    color: #fff
+    font: 
+        family: "Open Sans" sans-serif
+        style: normal
+        weight: bold 
+        line-height: 20px
+        text-transform: uppercase
+        letter-spacing: 10%
+%form-text-h1
+    letter-spacing: 3px 
+    font:
+        family: 'Bebas Neue', cursive
+        weight: 500    
+        size: 80px
+        style: normal
+
+.main
+    background: url(../img/bg1.png) no-repeat 
+    background-size: 100% 100vh
+    width: 100%
+    height: 100vh
+    position: relative
+    
+.header
+    position: relative
+    display: flex
+    position: absolute
+    min-width: 80% 
+    height: 20vh
+    padding-left: 15%
+    padding-top: 2% 
+.logo 
+    flex: 30vh
+   
+.nav 
+    flex: 60%
+    padding-top: 2%
+    li 
+        display: inline
+        margin: 1%
+        a
+            @extend %form-text
+
+.lang
+    flex: 10%    
+.logos
+    flex: 20%
+    padding-top: 2vh
+
+
+.main-content
+    position: absolute
+    width: 100%
+    top: 40vh
+    text-align: center
+    margin: 0 auto
+    @extend %form-text
+    h1
+        @extend %form-text-h1
+        padding-bottom:
+    h4 
+        @extend %form-text-h1
+        font-size: 24px
+        line-height: 24px
+        padding-bottom: 3%
+      
