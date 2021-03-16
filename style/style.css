@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
-.nav li a, .main-content, .but button h3, .story h3, .other p, .what h3 {
+.nav li a, .main-content, .but button h3, .story h3, .other p, .what h3, .survive p {
   color: #fff;
   text-transform: uppercase;
   font-family: 'Open Sans' sans-serif;
@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 
-.main-content h1, .main-content h4, .what h1 {
+.main-content h1, .main-content h4, .what h1, .special-op {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: 'Bebas Neue', sans-serif;
@@ -140,12 +140,12 @@
 .social {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 105vh;
 }
 
 .social .bg2 {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
 }
 
 .slider {
@@ -233,5 +233,47 @@
   height: 62vh;
   position: absolute;
   z-index: 10;
+}
+
+.special {
+  position: relative;
+}
+
+.special img {
+  width: 100%;
+  height: 100vh;
+}
+
+.special-op {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  font-size: 25px;
+  color: #fff;
+}
+
+.special-op h3 {
+  color: #FFB548;
+  padding-bottom: 5%;
+  padding-top: 0;
+}
+
+.special-op .spec {
+  font-size: 70px;
+  padding-bottom: 2%;
+}
+
+.special-op .wt {
+  padding-bottom: 1%;
+  font-size: 18px;
+}
+
+.survive {
+  width: 50%;
+}
+
+.survive p {
+  font-size: 20px;
+  padding-bottom: 5%;
 }
 /*# sourceMappingURL=style.css.map */
