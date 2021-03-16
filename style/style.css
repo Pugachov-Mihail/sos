@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-.nav li a, .main-content, .but button h3, .story h3, .what h3 {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+.nav li a, .main-content, .but button h3, .story h3, .other p, .what h3 {
   color: #fff;
-  font-family: "Open Sans" sans-serif;
+  text-transform: uppercase;
+  font-family: 'Open Sans' sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-line-height: 20px;
-  font-text-transform: uppercase;
-  font-letter-spacing: 10%;
+  font-weight: 400;
 }
 
 .main-content h1, .main-content h4, .what h1 {
   letter-spacing: 3px;
+  text-transform: uppercase;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 500;
   font-size: 80px;
@@ -138,17 +139,56 @@
 
 .social {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.social img {
+.social .bg2 {
   width: 100%;
   height: 100vh;
 }
 
 .slider {
   position: absolute;
-  top: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 10%;
   left: 10%;
+  width: 50%;
+}
+
+.direc {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.direc hr {
+  width: 90%;
+  position: absolute;
+  z-index: 999;
+}
+
+.other {
+  padding: 20%;
+  width: 60%;
+  height: 30vh;
+}
+
+.other p {
+  color: #fff;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.what {
+  width: 50%;
 }
 
 .what h1 {
@@ -162,19 +202,36 @@
   font-style: normal;
 }
 
-#img {
-  line-height: 1px;
+.screen {
+  margin-left: 5%;
+  width: 20%;
 }
 
-.screen {
-  position: absolute;
+.screen img {
+  width: 60%;
+  height: 70vh;
+  border-radius: 2%;
 }
 
 .screen .screen-one {
-  z-index: 10;
+  left: 80%;
+  position: absolute;
+  z-index: 30;
 }
 
 .screen .screen-two {
-  z-index: 1;
+  top: 2%;
+  right: -43%;
+  height: 66vh;
+  position: absolute;
+  z-index: 20;
+}
+
+.screen .screen-three {
+  top: 4%;
+  right: -45%;
+  height: 62vh;
+  position: absolute;
+  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */
