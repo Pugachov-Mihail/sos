@@ -2,7 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
+%img 
+    width: 25%
+    height: 50%
+    border-radius: 50% 
+    margin: 3%
+    
 
+%quio
+    border-radius: 3%
+    border: 1px solid
+    background: rgba(22, 22, 22, 0.781)
+    width: 25%
+    height: 25vh
+    
 %form-text
     color: #fff
     text-transform: uppercase
@@ -21,18 +34,23 @@
         style: normal
         weight: bold
 
+%form-border
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 15vh
+    background-color: #050606
 
 %form-conteiner
     width: 100%
-    height: 100vh
+    height: 105vh
 
 .main-conteiner
-    display: flex
     @extend %form-conteiner
 
 .main
     background: url(../img/bg1.png) no-repeat 
-    background-size: 100% 100vh
+    background-size: 100% 105vh
     @extend %form-conteiner
 
     
@@ -117,8 +135,8 @@
 
 .social 
     position: relative
-    width: 100%
-    height: 105vh
+    @extend %form-conteiner
+    
     .bg2
         width: 100%
         height: 105vh
@@ -191,8 +209,7 @@
 .special 
     margin-bottom: 0
     position: relative
-    height: 105vh
-    width: 100% 
+    @extend %form-conteiner
     img
         width: 100%
         height: 105vh
@@ -225,10 +242,9 @@
 .system
     position: relative
     margin-top: 0
-    height: 100vh
-    width: 100% 
+    @extend %form-conteiner
     img
-        height: 100vh
+        height: 105vh
         width: 100%
 
 .table 
@@ -274,3 +290,106 @@
 
 
 .quotes
+    position: relative
+    margin: 0
+    img
+        width: 100%
+        height: 100vh
+
+.quotes-text
+    position: absolute
+    top: 25%
+    left: 10%
+    width: 30%
+    h1
+        @extend %form-text-h1
+        color: #fff
+        font-weight: bold
+    h3
+        font-size: 25px
+        @extend %form-text
+        color: #fff 
+    p
+        margin-top: 5%
+        font-size: 14px
+        @extend %form-text
+        color: #fff 
+        font-weight: 0
+
+    button
+        margin-top: 5%
+        width: 300px
+        height: 60px
+        text-align: center
+        background: #F3AF34
+        border: none
+        @extend %form-text-h1
+        font-size: 16px
+        font-weight: bold
+        button:default 
+            border: none
+
+%mask
+    @extend %img
+    position: absolute
+    left: 2.5%
+    top: 2%
+    z-index: 1    
+%quot
+    position: relative
+    border-radius: 3%
+    border: 1px solid
+    background: rgba(22, 22, 22, 0.781)
+    width: 22%
+    height: 22vh
+
+%q
+    @extend %quot
+    .fase
+        z-index: 2
+        position: absolute
+        @extend %img
+    .mask
+        @extend %mask
+    h1
+        @extend %form-text-h1
+        color: #FFB548
+        font-size: 25px
+        margin-left: 35%
+        margin-top: 6%
+        margin-bottom: 5%
+    h3
+        color: rgb(97, 87, 87)
+        margin-left: 35%
+        margin-top: 5%
+        margin-bottom: 7%
+    p
+        margin-left: 5%
+        @extend %form-text
+        font-size: 13px
+    h6
+        color: rgb(97, 87, 87)
+        margin-left: 5%
+        margin-top: 2%
+        @extend %form-text
+        font-size: 8px    
+    .twitter
+        padding: 0
+        position: absolute
+        margin-top: 1%
+        width: 5%
+
+.quot
+    top: 10%
+    left: 50%
+    position: absolute
+    width: 50%
+    border: 1px solid
+    height: 80vh
+    .q1
+        position: relative
+        width: 50%
+        @extend %q
+
+
+
