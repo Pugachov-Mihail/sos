@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
-.quot .q1 .mask, .quot .q1 .fase {
+.quot .q1 .mask, .quot .q2 .mask, .quot .q3 .mask, .quot .q1 .fase, .quot .q2 .fase, .quot .q3 .fase {
   width: 25%;
   height: 50%;
   border-radius: 50%;
   margin: 3%;
 }
 
-.nav li a, .main-content, .but button h3, .story h3, .other p, .what h3, .survive p, .table, .requeiment h3, .quotes-text h3, .quotes-text p, .quot .q1 p, .quot .q1 h6 {
+.nav li a, .main-content, .but button h3, .story h3, .other p, .what h3, .survive p, .table, .requeiment h3, .quotes-text h3, .quotes-text p, .quot .q1 p, .quot .q2 p, .quot .q3 p, .quot .q1 h6, .quot .q2 h6, .quot .q3 h6 {
   color: #fff;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
@@ -17,7 +17,7 @@
   font-weight: 400;
 }
 
-.main-content h1, .main-content h4, .what h1, .special-op, .table table td h1, .requeiment h1, .quotes-text h1, .quotes-text button, .quot .q1 h1 {
+.main-content h1, .main-content h4, .what h1, .special-op, .table table td h1, .requeiment h1, .quotes-text h1, .quotes-text button, .quot .q1 h1, .quot .q2 h1, .quot .q3 h1 {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: 'Bebas Neue', sans-serif;
@@ -385,14 +385,14 @@
   border: none;
 }
 
-.quot .q1 .mask {
+.quot .q1 .mask, .quot .q2 .mask, .quot .q3 .mask {
   position: absolute;
   left: 2.5%;
   top: 2%;
   z-index: 1;
 }
 
-.quot .q1 {
+.quot .q1, .quot .q2, .quot .q3 {
   position: relative;
   border-radius: 3%;
   border: 1px solid;
@@ -401,12 +401,12 @@
   height: 22vh;
 }
 
-.quot .q1 .fase {
+.quot .q1 .fase, .quot .q2 .fase, .quot .q3 .fase {
   z-index: 2;
   position: absolute;
 }
 
-.quot .q1 h1 {
+.quot .q1 h1, .quot .q2 h1, .quot .q3 h1 {
   color: #FFB548;
   font-size: 25px;
   margin-left: 35%;
@@ -414,43 +414,46 @@
   margin-bottom: 5%;
 }
 
-.quot .q1 h3 {
+.quot .q1 h3, .quot .q2 h3, .quot .q3 h3 {
   color: #615757;
   margin-left: 35%;
   margin-top: 5%;
   margin-bottom: 7%;
 }
 
-.quot .q1 p {
+.quot .q1 p, .quot .q2 p, .quot .q3 p {
   margin-left: 5%;
   font-size: 13px;
 }
 
-.quot .q1 h6 {
+.quot .q1 h6, .quot .q2 h6, .quot .q3 h6 {
   color: #615757;
   margin-left: 5%;
   margin-top: 2%;
   font-size: 8px;
 }
 
-.quot .q1 .twitter {
-  padding: 0;
-  position: absolute;
-  margin-top: 1%;
-  width: 5%;
-}
-
 .quot {
   top: 10%;
   left: 50%;
   position: absolute;
-  width: 50%;
-  border: 1px solid;
+  width: 48%;
   height: 80vh;
 }
 
 .quot .q1 {
-  position: relative;
+  left: 35%;
+  width: 50%;
+}
+
+.quot .q2 {
+  top: 5%;
+  width: 50%;
+}
+
+.quot .q3 {
+  left: 25%;
+  top: 10%;
   width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
