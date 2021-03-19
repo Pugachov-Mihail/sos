@@ -136,7 +136,6 @@
 .social 
     position: relative
     @extend %form-conteiner
-    
     .bg2
         width: 100%
         height: 105vh
@@ -206,7 +205,8 @@
         position: absolute
         z-index: 10
 
-.special 
+.special
+    
     margin-bottom: 0
     position: relative
     @extend %form-conteiner
@@ -290,8 +290,9 @@
 
 
 .quotes
+    margin-bottom: 0
+    border: none
     position: relative
-    margin: 0
     img
         width: 100%
         height: 100vh
@@ -394,4 +395,115 @@
         top: 10%
         width: 50%
         @extend %q
+.bts
+    position: absolute
 
+.bs
+    position: absolute
+
+.bg
+    position: absolute  
+
+.sub 
+    position: relative
+    margin-top: 0
+    width: 100%
+    height: 100vh
+    background-color: #080A0B
+    margin: 0
+    .ms
+        position: absolute
+        z-index: 100
+
+    img
+        position: absolute
+        width: 25%
+        height: 70vh
+        margin-left: 10%
+        margin-top: 5%
+    
+    .touch
+        position: absolute
+        margin-left: 40% 
+        margin-top: 10%
+        h3
+            @extend %form-text
+            margin: 2%
+            margin-bottom: 1%
+        h1
+            margin-top: 1%
+            @extend %form-text-h1
+            color: #fff
+            margin: 2%
+        p
+            width: 70%
+            @extend %form-text
+            margin: 2%
+            margin-top: 5%
+            font-size: 15px
+            font-weight: 400
+        input
+            margin: 2%
+        .email
+            background: rgba(255, 255, 255, 0.08)
+            width: 30%
+            height: 8vh
+            border: none
+            @extend %form-text
+            color:  #FFB548
+            border-radius: 4%
+        .sub
+            border-radius: 4%
+            @extend %form-text
+            color: #1A1917
+            font-weight: 700
+            width: 30%
+            height: 8vh
+            background-color: #FFB548
+            text-align: center
+            border: none
+            button:default 
+                border: none
+.footer
+    background-color: #080A0B
+    position: absolute
+    display: flex
+    height: 30vh
+    width: 100% 
+    .nav
+        margin-top: 3% 
+        text-align: center
+        margin-left: 15%
+    .logo 
+        width: 10%
+        padding: 0
+        img
+            padding: 0
+            height: 30%
+            position: absolute
+            margin-top: 3%
+            margin-left: 10% 
+            width: 10%
+        p
+            margin-left: 13%
+            @extend %form-text
+            font-size: 10px
+            position: absolute
+            margin-top: 12% 
+    .lg
+        width: 25%
+        margin-left: 0 
+        display: inline
+        margin-top: 5% 
+        height: 10vh
+        img
+            margin: 10px
+            display: inline
+            height: 35%
+            margin-top: 1%
+            width: 15%
+        p
+            margin-top: 4%
+            @extend %form-text
+            font-size: 10px
+            position: absolute
