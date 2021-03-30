@@ -603,4 +603,21 @@
   font-size: 10px;
   position: absolute;
 }
+
+.lang {
+  margin-top: 1.5%;
+}
+
+.lang select {
+  border: none;
+  font-size: 15px;
+}
+
+.lang select option {
+  background: #000000 75%;
+  font-family: "Open Sans" sans-serif;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
